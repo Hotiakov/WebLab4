@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Страница администратора аукциона
+    body 
+        h1.title Панель администратора
+        .admin
+            .participants.admin__item
+                h2.admin__title Участники
+                ul.participants__list.list 
+                    li.participants__item.list__item 
+                        p.list__header.participants__name.participants__text Имя участника
+                        p.list__header.participants__budget.participants__text Бюджет
+            .paintings.admin__item 
+                h2.admin__title Картины
+                ul.paintings__list.list
+                    li.paintings__item.list__item 
+                        p.list__header.paintings__name.paintings__text Название картины
+                        p.list__header.paintings__author.paintings__text Автор
+                        p.list__header.paintings__minPrice.paintings__text Минимальная цена
+                        p.list__header.paintings__owner.paintings__text Покупатель
+                        p.list__header.paintings__salePrice.paintings__text Цена продажи
+            .painting.admin__item  
+            .trading.admin__item 
+                h2.admin__title Ход аукциона
+        script(src="../public/script/admin.js") 

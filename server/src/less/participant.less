@@ -1,0 +1,80 @@
+@import url('options.less');
+@import url('modal.less');
+
+.participant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    &__info{
+        text-align: center;
+        font-size: 18px;
+    }
+    &__name{
+        margin-bottom: 10px;
+    }
+    &__btn{
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+    &__btns{
+        display: flex;
+    }
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+.window{
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item{
+        width: 49%;
+        border: 3px solid black;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        overflow: auto;
+    }
+}
+
+.painting{
+    display: flex;   
+    align-items: center;
+    &__info{
+        padding: 5px;
+        font-size: 14px;
+        span{
+            font-weight: 700;
+        }
+    }
+    &__text{
+        margin-bottom: 10px;
+    }
+    &__img{
+        flex: 1 0 40%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.trading{
+    &__title{
+        font-size: 16px;
+    }
+    &__info{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+.black{color: #000;}
+.red{color: red;}
+.bold{font-weight: 700;}
+.gray{color: gray;}
+.green{color: green;}

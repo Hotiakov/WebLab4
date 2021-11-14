@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Страница участника
+    body 
+        h1.title Панель участника
+        input#budget(hidden)
+        .participant
+            .participant__info 
+                h2.participant__name Имя: Кто-то
+                p.participant__budget Бюджет: 7000
+            .participant__btns
+                button.participant__btn.participant__offer.btn(disabled) Предложить новую цену 
+                button.participant__btn.participant__gallery.btn Страница с покупками
+        .windo
+            .window__wrapper 
+                .window__painting.window__item.painting 
+                .window__trading.window__item.trading  
+                    h2.trading__title Ход аукциона
+        #modal.modal__overlay
+            .modal
+                h3.modal__header Предложить цену
+                form.modal__form#price__form
+                    label.label.modal__label
+                        input#price.input.modal__input(name='price' type='number' min="1" placeholder='Новая цена*' required)
+                    input#hiddenName(name="name", hidden)
+                    input#hiddenPrice(hidden)
+                    button.button.modal__btn(type='submit') Предложить
+        script(src="../public/script/participant.js")

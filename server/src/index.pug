@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Меню участия
+    body.body
+        .container 
+            h1.menu__title.title Меню участия
+            a#enter.btn.menu__btn Войти как участник
+            a.btn.menu__btn(href="admin") Войти как администратор
+
+        #modal.modal__overlay
+            .modal
+                h3.modal__header Имя участника
+                form.modal__form#participant__form
+                    label.label.modal__label
+                        input#name.input.modal__input(name='name' type='text' placeholder='Имя участника*' required)
+                    button.button.modal__btn(type='submit') Войти
+        script(src="../public/script/index.js") 
